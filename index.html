@@ -4,18 +4,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>장내 미생물 분석 결과</title>
+    <title>마이크로바이옴 설문 분석 결과</title>
     <style>
-        body { font-family: 'NanumBarunGothic', sans-serif; margin: 20px; }
-        h1, h2 { color: #333; }
-        img { max-width: 100%; height: auto; margin-bottom: 20px; border: 1px solid #ddd; }
+        body { font-family: 'Nanum Gothic', sans-serif; line-height: 1.6; margin: 20px; background-color: #f4f4f4; color: #333; }
+        .container { max-width: 900px; margin: auto; background: #fff; padding: 30px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        h1, h2 { color: #0056b3; border-bottom: 2px solid #eee; padding-bottom: 10px; margin-top: 30px; }
+        img { max-width: 100%; height: auto; display: block; margin: 20px 0; border: 1px solid #ddd; border-radius: 4px; }
+        pre { background-color: #eee; padding: 15px; border-radius: 5px; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word; font-family: monospace; }
     </style>
 </head>
 <body>
-    <h1>경신고 1학년 8반 3월 설문 식단 그룹별 장내 미생물 불균형 지수(FB비율)</h1>
-    <img src="group_fb_ratio.png" alt="식단 그룹별 FB 비율 그래프">
+    <div class="container">
+        <h1>마이크로바이옴 설문 분석 결과</h1>
 
-    <h2>학생별 장내 미생물 불균형 지수(FB비율)</h2>
-    <img src="individual_fb_ratio.png" alt="학생별 FB 비율 그래프">
+        <h2>요약 보고서</h2>
+        <pre>==================================================
+      [ 마이크로바이옴 설문 분석 결과 보고서 ]
+==================================================
+▶ 총 참여 인원: 3명
+▶ 평균 건강 지수: 34.0 / 65
+▶ 우리 집단의 미생물 건강 등급: C (미생물 다양성 위기)
+--------------------------------------------------
+▶ [가장 우수한 항목]: Fermented
+▶ [가장 취약한 항목]: Fruit
+--------------------------------------------------
+▶ 『10퍼센트 인간』 관점의 조언:
+   - 현대적 질병의 위협에 노출되어 있습니다. 가공식품을 줄이고 섬유질(MACs) 섭취를 늘려야 합니다.
+==================================================</pre>
+
+        <h2>주요 시각화 결과</h2>
+        <img src="microbiome_analysis_plots.png" alt="건강 지수 분포 및 식습관-생활습관 상관관계">
+
+        <h2>각 항목별 점수 분포</h2>
+        <img src="microbiome_item_distributions.png" alt="각 항목별 점수 분포">
+
+        <p>---<br><em>이 보고서는 Google Colab에서 생성되었습니다.</em></p>
+    </div>
 </body>
 </html>
